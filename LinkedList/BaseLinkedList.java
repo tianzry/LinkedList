@@ -1,4 +1,4 @@
-import org.omg.CORBA.NO_IMPLEMENT;
+package LinkedList;
 
 import java.util.Hashtable;
 
