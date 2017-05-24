@@ -64,7 +64,6 @@ public class BaseLinkedList {
             }
             pre = cur;
             cur = cur.next;
-
         }
         return true;
     }
@@ -102,7 +101,6 @@ public class BaseLinkedList {
             System.out.print(nextNode.data + " ");
             nextNode = nextNode.next;
         }
-
         System.out.println();
     }
 
@@ -200,7 +198,7 @@ public class BaseLinkedList {
         Node pFast = head;
         Node pSlow = head;
         if (head == null) return false;
-        while (pFast != null && pFast.next != null) {
+        while (pFast.next != null) {
             if (pFast.next.next == null) return false;
             pFast = pFast.next.next;
             pSlow = pSlow.next;
@@ -218,7 +216,7 @@ public class BaseLinkedList {
         Node pFast = head;
         Node pSlow = head;
         if (pFast == null) return null;
-        while (pFast != null && pFast.next != null) {
+        while (pFast.next != null) {
             if (pFast.next.next == null) return null;
             pFast = pFast.next.next;
             pSlow = pSlow.next;
